@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Generation Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <header>
+  <div id="title"><h1>Generation Survey Form</h1>
+    </header>
+
+<form id="survey-form">
+
+  <div id="description"> Tell us something positive that happened to you through generation</div><br>
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="name-label" for="name">Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="sub-group">
+      <label class="left" id="email-label" for="email">Email:</label>
+    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+    </div>
+
+    <div class="sub-group">
+      <label  class="left" id="number-label" for="number">Age:</label>
+    <input type="number" name="Age" placeholder="Enter Your Age" min="1" max="100" class="right input-field" id="number">
+  </div>
+
+    <div class="sub-group">
+      <label class="left" id="handphone-label" for="handphone">Mobile:</label>
+
+    <input type="text" placeholder="Enter Your Phone Number" class="right input-field" id="handphone">
+  </div>
+
+  <div class="sub-group">
+    <label class="left" id="Father-label" for="FatherName">Father Name:</label>
+
+  <input type="text" placeholder="Enter Your Father Name" class="right input-field" id="FatherName">
+</div>
+
+<div class="sub-group">
+    <label class="left" id="Mother-label" for="MotherName">Mother Name:</label>
+
+  <input type="text" placeholder="Enter Your Mother Name" class="right input-field" id="MotherName">
+</div>
+
+
+<div class="sub-group">
+    <label class="left" for="dropdown">*Mode of learning throughout the generation</label>
+
+    <select class="right dropdown" id="dropdown" name="dropdown">
+      <option selected disabled>Select an option</option>
+      <option value="online">Online</option>
+      <option value="offline">Offline</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+</fieldset>
+
+
+<fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left">
+        Gender </label>
+    
+     <ul style="list-style: none;" class="right">
+
+<input id="male" type="radio" name="answer" value="male" required>  
+<label for="male">Male</label>
+<input id="female" type="radio" name="answer" value="female" required>  
+<label for="female">Female</label>
+<input id="other" type="radio" name="answer" value="other" required>  
+<label for="other">Other</label>  
+</ul></div></fieldset>
+
+
+  <fieldset class="fieldset">
+<div class="sub-group">
+<label class="left">
+    What is your required time for learning ? </label>
+
+ <ul style="list-style: none;" class="right">
+
+   <li class="checkbox"><label><input type="checkbox" name="game" value="morning" >Morning</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="afternoon">Afternoon</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="evening" >Evening<label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="full time" >full Time</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="other" >Other</label></li>
+       </ul></div></fieldset>
+
+    <fieldset class="fieldset">
+  <div class="sub-group">
+  <label class="left" id="left-radio">Will you recommend this generation platform to your friends?</label>
+
+   <ul style="list-style: none" class="right">
+       <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+   </ul>
+  </div></fieldset>
+
+
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left">
+        What emotions did you experianced throughout the generation course? <br> (select all that apply) </label>
+    
+     <ul style="list-style: none;" class="right">
+    
+       <li class="checkbox"><label><input type="checkbox" name="game" value="excited" >Excited</label></li>
+         <li class="checkbox"><label><input type="checkbox" name="game" value="elated">Elated</label></li>
+         <li class="checkbox"><label><input type="checkbox" name="game" value="humbled" >Humbled<label></li>
+         <li class="checkbox"><label><input type="checkbox" name="game" value="loved" >Loved</label></li>
+         <li class="checkbox"><label><input type="checkbox" name="game" value="enthusiastic" >Enthusiastic</label></li>
+           </ul></div></fieldset>
+
+
+           <fieldset class="fieldset">
+            <h2>Please describe your positive experiance in generation learning</h2>
+         
+             <div class="commentbox">
+         
+            <textarea rows="4"  placeholder="Enter your positive experiance here..."></textarea>
+         
+            <br></br>  
+            
+
+     <fieldset class="fieldset">
+   <h2>Any comments or suggestions?</h2>
+
+    <div class="commentbox">
+
+   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+
+   <br></br>
+
+  <button id="submit" type="submit">Submit</button>
+       </div></fieldset>
+</form>
+</div>
+  </body>
+</html>
